@@ -163,7 +163,7 @@ PRODUCT_PACKAGES += \
 
 # Recovery
 PRODUCT_PACKAGES += \
-     librecovery_updater_oppo
+    librecovery_updater_op3
 
 # RIL
 PRODUCT_PACKAGES += \
