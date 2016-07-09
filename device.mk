@@ -993,21 +993,8 @@ PRODUCT_COPY_FILES += \
 # Perf
 PRODUCT_COPY_FILES += \
     device/oneplus/oneplus3/prebuilt/bin/energy-awareness:system/bin/energy-awareness \
-    device/oneplus/oneplus3/prebuilt/bin/iop:system/bin/iop \
     device/oneplus/oneplus3/prebuilt/bin/msm_irqbalance:system/bin/msm_irqbalance \
-    device/oneplus/oneplus3/prebuilt/vendor/bin/perfd:system/vendor/bin/perfd \
-    device/oneplus/oneplus3/prebuilt/vendor/etc/perf-profile0.conf:system/vendor/etc/perf-profile0.conf \
-    device/oneplus/oneplus3/prebuilt/vendor/etc/perf-profile1.conf:system/vendor/etc/perf-profile1.conf \
-    device/oneplus/oneplus3/prebuilt/vendor/etc/perf-profile2.conf:system/vendor/etc/perf-profile2.conf \
-    device/oneplus/oneplus3/prebuilt/vendor/etc/perf-profile3.conf:system/vendor/etc/perf-profile3.conf \
-    device/oneplus/oneplus3/prebuilt/vendor/etc/perf-profile4.conf:system/vendor/etc/perf-profile4.conf \
-    device/oneplus/oneplus3/prebuilt/vendor/etc/perf-profile5.conf:system/vendor/etc/perf-profile5.conf \
-    device/oneplus/oneplus3/prebuilt/vendor/etc/perf-profile6.conf:system/vendor/etc/perf-profile6.conf \
-    device/oneplus/oneplus3/prebuilt/vendor/lib/libqti-iop-client.so:system/vendor/lib/libqti-iop-client.so \
-    device/oneplus/oneplus3/prebuilt/vendor/lib/libqti-iop.so:system/vendor/lib/libqti-iop.so \
     device/oneplus/oneplus3/prebuilt/vendor/lib/libqti-perfd-client.so:system/vendor/lib/libqti-perfd-client.so \
-    device/oneplus/oneplus3/prebuilt/vendor/lib64/libqti-iop-client.so:system/vendor/lib64/libqti-iop-client.so \
-    device/oneplus/oneplus3/prebuilt/vendor/lib64/libqti-iop.so:system/vendor/lib64/libqti-iop.so \
     device/oneplus/oneplus3/prebuilt/vendor/lib64/libqti-perfd-client.so:system/vendor/lib64/libqti-perfd-client.so
 
 # Peripheral manager
