@@ -1181,6 +1181,10 @@ PRODUCT_COPY_FILES += \
     device/oneplus/oneplus3/prebuilt/vendor/lib/libTimeService.so:system/vendor/lib/libTimeService.so \
     device/oneplus/oneplus3/prebuilt/vendor/lib64/libTimeService.so:system/vendor/lib64/libTimeService.so
 
+# VR
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.vr.high_performance.xml:system/etc/permissions/android.hardware.vr.high_performance.xml
+
 # Widevine
 PRODUCT_COPY_FILES += \
     device/oneplus/oneplus3/prebuilt/vendor/lib/libwvdrm_L3.so:system/vendor/lib/libwvdrm_L3.so \
