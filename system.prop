@@ -68,6 +68,9 @@ ro.product.first_api_level=23
 # Fingerprint
 persist.qfp=false
 
+# Google Assistant
+ro.opa.eligible_device=true
+
 # Google DNS
 net.dns1=8.8.8.8
 net.dns2=8.8.4.4
