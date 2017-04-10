@@ -52,12 +52,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Snap
 
-# Connectivity Engine support (CNE)
-PRODUCT_PACKAGES += \
-    cneapiclient \
-    com.quicinc.cne \
-    services-ext
-
 # DASH
 PRODUCT_PACKAGES += \
     dashd
@@ -118,7 +112,6 @@ PRODUCT_PACKAGES += \
     CNEService \
     QtiTetherService \
     com.qualcomm.location \
-    dpmserviceapp \
     qcrilmsgtunnel \
     colorservice \
     ims \
@@ -715,47 +708,17 @@ PRODUCT_COPY_FILES += \
 # CNE
 PRODUCT_COPY_FILES += \
     device/oneplus/oneplus3/prebuilt/bin/cnd:system/bin/cnd \
-    device/oneplus/oneplus3/prebuilt/etc/cne/andsfCne.xml:system/etc/cne/andsfCne.xml \
-    device/oneplus/oneplus3/prebuilt/etc/cne/SwimConfig.xml:system/etc/cne/SwimConfig.xml \
-    device/oneplus/oneplus3/prebuilt/etc/cne/wqeclient/ATT/ATT_profile1.xml:system/etc/cne/wqeclient/ATT/ATT_profile1.xml \
-    device/oneplus/oneplus3/prebuilt/etc/cne/wqeclient/ATT/ATT_profile2.xml:system/etc/cne/wqeclient/ATT/ATT_profile2.xml \
-    device/oneplus/oneplus3/prebuilt/etc/cne/wqeclient/ATT/ATT_profile3.xml:system/etc/cne/wqeclient/ATT/ATT_profile3.xml \
-    device/oneplus/oneplus3/prebuilt/etc/cne/wqeclient/ATT/ATT_profile4.xml:system/etc/cne/wqeclient/ATT/ATT_profile4.xml \
-    device/oneplus/oneplus3/prebuilt/etc/cne/wqeclient/profile1.xml:system/etc/cne/wqeclient/profile1.xml \
-    device/oneplus/oneplus3/prebuilt/etc/cne/wqeclient/profile2.xml:system/etc/cne/wqeclient/profile2.xml \
-    device/oneplus/oneplus3/prebuilt/etc/cne/wqeclient/profile3.xml:system/etc/cne/wqeclient/profile3.xml \
-    device/oneplus/oneplus3/prebuilt/etc/cne/wqeclient/profile4.xml:system/etc/cne/wqeclient/profile4.xml \
-    device/oneplus/oneplus3/prebuilt/etc/cne/wqeclient/profile5.xml:system/etc/cne/wqeclient/profile5.xml \
-    device/oneplus/oneplus3/prebuilt/etc/cne/wqeclient/ROW/ROW_profile1.xml:system/etc/cne/wqeclient/ROW/ROW_profile1.xml \
-    device/oneplus/oneplus3/prebuilt/etc/cne/wqeclient/ROW/ROW_profile2.xml:system/etc/cne/wqeclient/ROW/ROW_profile2.xml \
-    device/oneplus/oneplus3/prebuilt/etc/cne/wqeclient/ROW/ROW_profile3.xml:system/etc/cne/wqeclient/ROW/ROW_profile3.xml \
-    device/oneplus/oneplus3/prebuilt/etc/cne/wqeclient/ROW/ROW_profile4.xml:system/etc/cne/wqeclient/ROW/ROW_profile4.xml \
-    device/oneplus/oneplus3/prebuilt/etc/cne/wqeclient/ROW/ROW_profile5.xml:system/etc/cne/wqeclient/ROW/ROW_profile5.xml \
-    device/oneplus/oneplus3/prebuilt/etc/cne/wqeclient/VZW/VZW_profile1.xml:system/etc/cne/wqeclient/VZW/VZW_profile1.xml \
-    device/oneplus/oneplus3/prebuilt/etc/cne/wqeclient/VZW/VZW_profile2.xml:system/etc/cne/wqeclient/VZW/VZW_profile2.xml \
-    device/oneplus/oneplus3/prebuilt/etc/cne/wqeclient/VZW/VZW_profile3.xml:system/etc/cne/wqeclient/VZW/VZW_profile3.xml \
-    device/oneplus/oneplus3/prebuilt/etc/cne/wqeclient/VZW/VZW_profile4.xml:system/etc/cne/wqeclient/VZW/VZW_profile4.xml \
-    device/oneplus/oneplus3/prebuilt/etc/cne/wqeclient/VZW/VZW_profile5.xml:system/etc/cne/wqeclient/VZW/VZW_profile5.xml \
-    device/oneplus/oneplus3/prebuilt/etc/cne/wqeclient/VZW/VZW_profile6.xml:system/etc/cne/wqeclient/VZW/VZW_profile6.xml \
-    device/oneplus/oneplus3/prebuilt/etc/permissions/cneapiclient.xml:system/etc/permissions/cneapiclient.xml \
     device/oneplus/oneplus3/prebuilt/etc/permissions/com.quicinc.cne.xml:system/etc/permissions/com.quicinc.cne.xml \
-    device/oneplus/oneplus3/prebuilt/etc/permissions/ConnectivityExt.xml:system/etc/permissions/ConnectivityExt.xml \
-    device/oneplus/oneplus3/prebuilt/framework/cneapiclient.jar:system/framework/cneapiclient.jar \
     device/oneplus/oneplus3/prebuilt/framework/com.quicinc.cne.jar:system/framework/com.quicinc.cne.jar \
-    device/oneplus/oneplus3/prebuilt/framework/ConnectivityExt.jar:system/framework/ConnectivityExt.jar \
     device/oneplus/oneplus3/prebuilt/vendor/lib/libcne.so:system/vendor/lib/libcne.so \
     device/oneplus/oneplus3/prebuilt/vendor/lib/libcneapiclient.so:system/vendor/lib/libcneapiclient.so \
     device/oneplus/oneplus3/prebuilt/vendor/lib/libcneqmiutils.so:system/vendor/lib/libcneqmiutils.so \
-    device/oneplus/oneplus3/prebuilt/vendor/lib/libvendorconn.so:system/vendor/lib/libvendorconn.so \
     device/oneplus/oneplus3/prebuilt/vendor/lib/libwms.so:system/vendor/lib/libwms.so \
-    device/oneplus/oneplus3/prebuilt/vendor/lib/libwqe.so:system/vendor/lib/libwqe.so \
     device/oneplus/oneplus3/prebuilt/vendor/lib/libxml.so:system/vendor/lib/libxml.so \
     device/oneplus/oneplus3/prebuilt/vendor/lib64/libcne.so:system/vendor/lib64/libcne.so \
     device/oneplus/oneplus3/prebuilt/vendor/lib64/libcneapiclient.so:system/vendor/lib64/libcneapiclient.so \
     device/oneplus/oneplus3/prebuilt/vendor/lib64/libcneqmiutils.so:system/vendor/lib64/libcneqmiutils.so \
-    device/oneplus/oneplus3/prebuilt/vendor/lib64/libvendorconn.so:system/vendor/lib64/libvendorconn.so \
     device/oneplus/oneplus3/prebuilt/vendor/lib64/libwms.so:system/vendor/lib64/libwms.so \
-    device/oneplus/oneplus3/prebuilt/vendor/lib64/libwqe.so:system/vendor/lib64/libwqe.so \
     device/oneplus/oneplus3/prebuilt/vendor/lib64/libxml.so:system/vendor/lib64/libxml.so
 
 # Display calibration
@@ -763,27 +726,6 @@ PRODUCT_COPY_FILES += \
     device/oneplus/oneplus3/prebuilt/etc/FOSSConfig.xml:system/etc/FOSSConfig.xml \
     device/oneplus/oneplus3/prebuilt/etc/qdcm_calib_data_samsung_s6e3fa3_1080p_cmd_mode_dsi_panel.xml:system/etc/qdcm_calib_data_samsung_s6e3fa3_1080p_cmd_mode_dsi_panel.xml \
     device/oneplus/oneplus3/prebuilt/etc/qdcm_calib_data_samsung_s6e3fa5_1080p_cmd_mode_dsi_panel.xml:system/etc/qdcm_calib_data_samsung_s6e3fa5_1080p_cmd_mode_dsi_panel.xml
-
-# DPM
-PRODUCT_COPY_FILES += \
-    device/oneplus/oneplus3/prebuilt/bin/dpmd:system/bin/dpmd \
-    device/oneplus/oneplus3/prebuilt/etc/dpm/dpm.conf:system/etc/dpm/dpm.conf \
-    device/oneplus/oneplus3/prebuilt/etc/dpm/nsrm/NsrmConfiguration.xml:system/etc/dpm/nsrm/NsrmConfiguration.xml \
-    device/oneplus/oneplus3/prebuilt/etc/permissions/com.qti.dpmframework.xml:system/etc/permissions/com.qti.dpmframework.xml \
-    device/oneplus/oneplus3/prebuilt/etc/permissions/dpmapi.xml:system/etc/permissions/dpmapi.xml \
-    device/oneplus/oneplus3/prebuilt/framework/com.qti.dpmframework.jar:system/framework/com.qti.dpmframework.jar \
-    device/oneplus/oneplus3/prebuilt/framework/dpmapi.jar:system/framework/dpmapi.jar \
-    device/oneplus/oneplus3/prebuilt/framework/tcmclient.jar:system/framework/tcmclient.jar \
-    device/oneplus/oneplus3/prebuilt/vendor/lib/libdpmctmgr.so:system/vendor/lib/libdpmctmgr.so \
-    device/oneplus/oneplus3/prebuilt/vendor/lib/libdpmfdmgr.so:system/vendor/lib/libdpmfdmgr.so \
-    device/oneplus/oneplus3/prebuilt/vendor/lib/libdpmframework.so:system/vendor/lib/libdpmframework.so \
-    device/oneplus/oneplus3/prebuilt/vendor/lib/libdpmnsrm.so:system/vendor/lib/libdpmnsrm.so \
-    device/oneplus/oneplus3/prebuilt/vendor/lib/libdpmtcm.so:system/vendor/lib/libdpmtcm.so \
-    device/oneplus/oneplus3/prebuilt/vendor/lib64/libdpmctmgr.so:system/vendor/lib64/libdpmctmgr.so \
-    device/oneplus/oneplus3/prebuilt/vendor/lib64/libdpmfdmgr.so:system/vendor/lib64/libdpmfdmgr.so \
-    device/oneplus/oneplus3/prebuilt/vendor/lib64/libdpmframework.so:system/vendor/lib64/libdpmframework.so \
-    device/oneplus/oneplus3/prebuilt/vendor/lib64/libdpmnsrm.so:system/vendor/lib64/libdpmnsrm.so \
-    device/oneplus/oneplus3/prebuilt/vendor/lib64/libdpmtcm.so:system/vendor/lib64/libdpmtcm.so
 
 # DRM
 PRODUCT_COPY_FILES += \

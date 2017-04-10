@@ -97,9 +97,6 @@ BOARD_HARDWARE_CLASS += hardware/cyanogen/cmhw
 BOARD_HARDWARE_CLASS += device/oneplus/oneplus3/cmhw
 TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/double_tap_enable"
 
-# CNE and DPM
-BOARD_USES_QCNE := true
-
 # Crypto
 TARGET_HW_DISK_ENCRYPTION := true
 
