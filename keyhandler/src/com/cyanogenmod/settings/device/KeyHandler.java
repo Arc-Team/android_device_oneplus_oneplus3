@@ -147,7 +147,9 @@ public class KeyHandler implements DeviceKeyHandler {
 
         if (isSliderModeSupported) {
             mNotificationManager.setZenMode(sSupportedSliderModes.get(scanCode), null, TAG);
-            doHapticFeedback();
+            if (mVibrator != null) {
+                mVibrator.vibrate(40);
+            }
         } else if (!mEventHandler.hasMessages(GESTURE_REQUEST)) {
             Message msg = getMessageForKeyEvent(scanCode);
             boolean defaultProximity = mContext.getResources().getBoolean(
