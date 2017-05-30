@@ -324,5 +324,15 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/WCNSS_qcom_cfg.ini:system/etc/wifi/WCNSS_qcom_cfg.ini
 
-# Inherit from oppo-common
-$(call inherit-product, device/oppo/common/common.mk)
+# Keyhandler
+PRODUCT_PACKAGES += \
+    ConfigPanel \
+    com.cyanogenmod.keyhandler
+
+PRODUCT_SYSTEM_SERVER_JARS += com.cyanogenmod.keyhandler
+
+# never dexopt the keyhandler
+$(call add-product-dex-preopt-module-config,com.cyanogenmod.keyhandler,disable)
+
+# Recovery
+PRODUCT_PACKAGES += librecovery_updater_oppo

@@ -21,8 +21,16 @@
 # definition file).
 #
 
-# Inherit from oppo-common
--include device/oppo/common/BoardConfigCommon.mk
+# CM Hardware
+BOARD_USES_CYANOGEN_HARDWARE := true
+BOARD_HARDWARE_CLASS += hardware/cyanogen/cmhw
+
+# QCOM Power
+TARGET_POWERHAL_VARIANT := qcom
+
+# Releasetools
+TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_oppo
+TARGET_RELEASETOOLS_EXTENSIONS := device/oneplus/oneplus3
 
 PLATFORM_PATH := device/oneplus/oneplus3
 
