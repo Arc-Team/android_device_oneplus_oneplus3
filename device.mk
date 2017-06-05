@@ -973,15 +973,15 @@ PRODUCT_PACKAGES += \
     tinymix
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/audio/audio_effects.conf:system/vendor/etc/audio_effects.conf \
-    $(LOCAL_PATH)/audio/audio_output_policy.conf:system/vendor/etc/audio_output_policy.conf \
-    $(LOCAL_PATH)/audio/audio_platform_info.xml:system/etc/audio_platform_info.xml \
-    $(LOCAL_PATH)/audio/audio_policy_configuration.xml:system/etc/audio_policy_configuration.xml \
-    $(LOCAL_PATH)/audio/listen_platform_info.xml:system/etc/listen_platform_info.xml \
-    $(LOCAL_PATH)/audio/mixer_paths_tasha.xml:system/etc/mixer_paths_tasha.xml \
-    $(LOCAL_PATH)/audio/sound_trigger_mixer_paths_wcd9330.xml:system/etc/sound_trigger_mixer_paths_wcd9330.xml \
-    $(LOCAL_PATH)/audio/sound_trigger_mixer_paths.xml:system/etc/sound_trigger_mixer_paths.xml \
-    $(LOCAL_PATH)/audio/sound_trigger_platform_info.xml:system/etc/sound_trigger_platform_info.xml
+    device/oneplus/oneplus3/prebuilt/vendor/etc/audio_effects.conf:system/vendor/etc/audio_effects.conf \
+    device/oneplus/oneplus3/prebuilt/vendor/etc/audio_output_policy.conf:system/vendor/etc/audio_output_policy.conf \
+    device/oneplus/oneplus3/prebuilt/etc/audio_platform_info.xml:system/etc/audio_platform_info.xml \
+    device/oneplus/oneplus3/prebuilt/etc/audio_policy_configuration.xml:system/etc/audio_policy_configuration.xml \
+    device/oneplus/oneplus3/prebuilt/etc/listen_platform_info.xml:system/etc/listen_platform_info.xml \
+    device/oneplus/oneplus3/prebuilt/etc/mixer_paths_tasha.xml:system/etc/mixer_paths_tasha.xml \
+    device/oneplus/oneplus3/prebuilt/etc/sound_trigger_mixer_paths_wcd9330.xml:system/etc/sound_trigger_mixer_paths_wcd9330.xml \
+    device/oneplus/oneplus3/prebuilt/etc/sound_trigger_mixer_paths.xml:system/etc/sound_trigger_mixer_paths.xml \
+    device/oneplus/oneplus3/prebuilt/etc/sound_trigger_platform_info.xml:system/etc/sound_trigger_platform_info.xml
 
 PRODUCT_COPY_FILES += \
     $(TOPDIR)frameworks/av/services/audiopolicy/config/a2dp_audio_policy_configuration.xml:/system/etc/a2dp_audio_policy_configuration.xml \
@@ -1001,7 +1001,7 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/iot_devlist.conf:system/etc/bluetooth/iot_devlist.conf
+    device/oneplus/oneplus3/prebuilt/etc/bluetooth/iot_devlist.conf:system/etc/bluetooth/iot_devlist.conf
 
 # Camera
 PRODUCT_PACKAGES += \
@@ -1048,12 +1048,12 @@ PRODUCT_PACKAGES += \
     libgnsspps
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/gps/etc/flp.conf:system/etc/flp.conf \
-    $(LOCAL_PATH)/gps/etc/gps.conf:system/etc/gps.conf \
-    $(LOCAL_PATH)/gps/etc/izat.conf:system/etc/izat.conf \
-    $(LOCAL_PATH)/gps/etc/lowi.conf:system/etc/lowi.conf \
-    $(LOCAL_PATH)/gps/etc/sap.conf:system/etc/sap.conf \
-    $(LOCAL_PATH)/gps/etc/xtwifi.conf:system/etc/xtwifi.conf
+    device/oneplus/oneplus3/prebuilt/etc/flp.conf:system/etc/flp.conf \
+    device/oneplus/oneplus3/prebuilt/etc/gps.conf:system/etc/gps.conf \
+    device/oneplus/oneplus3/prebuilt/etc/izat.conf:system/etc/izat.conf \
+    device/oneplus/oneplus3/prebuilt/etc/lowi.conf:system/etc/lowi.conf \
+    device/oneplus/oneplus3/prebuilt/etc/sap.conf:system/etc/sap.conf \
+    device/oneplus/oneplus3/prebuilt/etc/xtwifi.conf:system/etc/xtwifi.conf
 
 # IPv6
 PRODUCT_PACKAGES += \
@@ -1062,16 +1062,16 @@ PRODUCT_PACKAGES += \
 
 # IRQ
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/msm_irqbalance.conf:system/vendor/etc/msm_irqbalance.conf
+    device/oneplus/oneplus3/prebuilt/vendor/etc/msm_irqbalance.conf:system/vendor/etc/msm_irqbalance.conf
 
 # IRSC
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/sec_config:system/etc/sec_config
+    device/oneplus/oneplus3/prebuilt/etc/sec_config:system/etc/sec_config
 
 # Keylayouts
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/keylayout/fpc1020.kl:system/usr/keylayout/fpc1020.kl \
-    $(LOCAL_PATH)/keylayout/synaptics.kl:system/usr/keylayout/synaptics.kl
+    device/oneplus/oneplus3/prebuilt/usr/keylayout/fpc1020.kl:system/usr/keylayout/fpc1020.kl \
+    device/oneplus/oneplus3/prebuilt/usr/keylayout/synaptics.kl:system/usr/keylayout/synaptics.kl
 
 # Lights
 PRODUCT_PACKAGES += \
@@ -1083,9 +1083,9 @@ PRODUCT_PACKAGES += \
 
 # Media
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/media_codecs.xml:system/etc/media_codecs.xml \
-    $(LOCAL_PATH)/configs/media_codecs_performance.xml:system/etc/media_codecs_performance.xml \
-    $(LOCAL_PATH)/configs/media_profiles.xml:system/etc/media_profiles.xml
+    device/oneplus/oneplus3/prebuilt/etc/media_codecs.xml:system/etc/media_codecs.xml \
+    device/oneplus/oneplus3/prebuilt/etc/media_codecs_performance.xml:system/etc/media_codecs_performance.xml \
+    device/oneplus/oneplus3/prebuilt/etc/media_profiles.xml:system/etc/media_profiles.xml
 
 PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:system/etc/media_codecs_google_audio.xml \
@@ -1103,8 +1103,8 @@ PRODUCT_PACKAGES += \
     Tag
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/nfc/libnfc-brcm.conf:system/etc/libnfc-brcm.conf \
-    $(LOCAL_PATH)/configs/nfc/libnfc-nxp.conf:system/etc/libnfc-nxp.conf
+    device/oneplus/oneplus3/prebuilt/etc/libnfc-brcm.conf:system/etc/libnfc-brcm.conf \
+    device/oneplus/oneplus3/prebuilt/etc/libnfc-nxp.conf:system/etc/libnfc-nxp.conf
 
 # OMX
 PRODUCT_PACKAGES += \
@@ -1163,14 +1163,14 @@ PRODUCT_PACKAGES += \
     wpa_supplicant.conf
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/wifi/hostapd.accept:system/etc/hostapd/hostapd.accept \
-    $(LOCAL_PATH)/wifi/hostapd.conf:system/etc/hostapd/hostapd_default.conf \
-    $(LOCAL_PATH)/wifi/hostapd.deny:system/etc/hostapd/hostapd.deny \
-    $(LOCAL_PATH)/wifi/p2p_supplicant_overlay.conf:system/etc/wifi/p2p_supplicant_overlay.conf \
-    $(LOCAL_PATH)/wifi/wpa_supplicant_overlay.conf:system/etc/wifi/wpa_supplicant_overlay.conf
+    device/oneplus/oneplus3/prebuilt/etc/hostapd.accept:system/etc/hostapd/hostapd.accept \
+    device/oneplus/oneplus3/prebuilt/etc/hostapd.conf:system/etc/hostapd/hostapd_default.conf \
+    device/oneplus/oneplus3/prebuilt/etc/hostapd.deny:system/etc/hostapd/hostapd.deny \
+    device/oneplus/oneplus3/prebuilt/etc/wifi/p2p_supplicant_overlay.conf:system/etc/wifi/p2p_supplicant_overlay.conf \
+    device/oneplus/oneplus3/prebuilt/etc/wifi/wpa_supplicant_overlay.conf:system/etc/wifi/wpa_supplicant_overlay.conf
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/wifi/WCNSS_qcom_cfg.ini:system/etc/wifi/WCNSS_qcom_cfg.ini
+    device/oneplus/oneplus3/prebuilt/etc/wifi/WCNSS_qcom_cfg.ini:system/etc/wifi/WCNSS_qcom_cfg.ini
 
 # Keyhandler
 PRODUCT_PACKAGES += \
