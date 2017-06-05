@@ -920,6 +920,7 @@ PRODUCT_COPY_FILES += \
 
 # Network
 PRODUCT_COPY_FILES += \
+    device/oneplus/oneplus3/prebuilt/vendor/lib/libconnctrl.so:system/vendor/lib/libconnctrl.so \
     device/oneplus/oneplus3/prebuilt/vendor/lib64/libconnctrl.so:system/vendor/lib64/libconnctrl.so \
     device/oneplus/oneplus3/prebuilt/vendor/lib64/libQtiTether.so:system/vendor/lib64/libQtiTether.so
 
