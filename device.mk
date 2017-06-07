@@ -110,7 +110,6 @@ PRODUCT_PACKAGES += \
     fastdormancy \
     shutdownlistener \
     CNEService \
-    QtiTetherService \
     com.qualcomm.location \
     qcrilmsgtunnel \
     colorservice \
@@ -713,11 +712,13 @@ PRODUCT_COPY_FILES += \
     device/oneplus/oneplus3/prebuilt/vendor/lib/libcne.so:system/vendor/lib/libcne.so \
     device/oneplus/oneplus3/prebuilt/vendor/lib/libcneapiclient.so:system/vendor/lib/libcneapiclient.so \
     device/oneplus/oneplus3/prebuilt/vendor/lib/libcneqmiutils.so:system/vendor/lib/libcneqmiutils.so \
+    device/oneplus/oneplus3/prebuilt/vendor/lib/libconnctrl.so:system/vendor/lib/libconnctrl.so \
     device/oneplus/oneplus3/prebuilt/vendor/lib/libwms.so:system/vendor/lib/libwms.so \
     device/oneplus/oneplus3/prebuilt/vendor/lib/libxml.so:system/vendor/lib/libxml.so \
     device/oneplus/oneplus3/prebuilt/vendor/lib64/libcne.so:system/vendor/lib64/libcne.so \
     device/oneplus/oneplus3/prebuilt/vendor/lib64/libcneapiclient.so:system/vendor/lib64/libcneapiclient.so \
     device/oneplus/oneplus3/prebuilt/vendor/lib64/libcneqmiutils.so:system/vendor/lib64/libcneqmiutils.so \
+    device/oneplus/oneplus3/prebuilt/vendor/lib64/libconnctrl.so:system/vendor/lib64/libconnctrl.so \
     device/oneplus/oneplus3/prebuilt/vendor/lib64/libwms.so:system/vendor/lib64/libwms.so \
     device/oneplus/oneplus3/prebuilt/vendor/lib64/libxml.so:system/vendor/lib64/libxml.so
 
@@ -917,12 +918,6 @@ PRODUCT_COPY_FILES += \
     device/oneplus/oneplus3/prebuilt/etc/media_codecs.xml:system/etc/media_codecs.xml \
     device/oneplus/oneplus3/prebuilt/etc/media_codecs_performance.xml:system/etc/media_codecs_performance.xml \
     device/oneplus/oneplus3/prebuilt/etc/media_profiles.xml:system/etc/media_profiles.xml
-
-# Network
-PRODUCT_COPY_FILES += \
-    device/oneplus/oneplus3/prebuilt/vendor/lib/libconnctrl.so:system/vendor/lib/libconnctrl.so \
-    device/oneplus/oneplus3/prebuilt/vendor/lib64/libconnctrl.so:system/vendor/lib64/libconnctrl.so \
-    device/oneplus/oneplus3/prebuilt/vendor/lib64/libQtiTether.so:system/vendor/lib64/libQtiTether.so
 
 # NFC Config
 PRODUCT_COPY_FILES += \
