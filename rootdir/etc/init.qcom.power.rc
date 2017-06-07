@@ -21,6 +21,18 @@ on boot
     chown system system /dev/cpuset/camera-daemon/tasks
     chmod 0664 /dev/cpuset/camera-daemon/tasks
 
+    # DoubleTap2Wake
+    write /sys/android_touch/doubletap2wake 1
+
+    # F-Sync
+    write /sys/module/sync/parameters/fsync_enabled 0
+
+    # Backlight dimmer
+    write /sys/module/mdss_fb/parameters/backlight_dimmer 1
+
+    # Sweep2Sleep
+    write /sys/sweep2sleep/sweep2sleep 0
+
     # Enable sched boost
     write /proc/sys/kernel/sched_boost 1
 
