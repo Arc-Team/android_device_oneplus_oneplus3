@@ -50,7 +50,8 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    Snap
+    Snap \
+    libcamera_shim
 
 # DASH
 PRODUCT_PACKAGES += \
