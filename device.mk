@@ -176,6 +176,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     sensors.msm8996
 
+# Thermal
+PRODUCT_PACKAGES += \
+    thermal.msm8996
+
 # Wifi
 PRODUCT_PACKAGES += \
     ipacm \
