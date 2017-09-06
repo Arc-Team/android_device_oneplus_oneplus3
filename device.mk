@@ -596,6 +596,7 @@ PRODUCT_COPY_FILES += \
     device/oneplus/oneplus3/prebuilt/etc/oneplus3T_vstab_db_720p_video_1.config:system/etc/oneplus3T_vstab_db_720p_video_1.config \
     device/oneplus/oneplus3/prebuilt/lib/lib_oneplus_facebeauty.so:system/lib/lib_oneplus_facebeauty.so \
     device/oneplus/oneplus3/prebuilt/lib/lib_oneplus_md.so:system/lib/lib_oneplus_md.so \
+    device/oneplus/oneplus3/prebuilt/lib/lib_oneplus_watermark.so:system/lib/lib_oneplus_watermark.so \
     device/oneplus/oneplus3/prebuilt/lib/libFNVfbEngineHAL.so:system/lib/libFNVfbEngineHAL.so \
     device/oneplus/oneplus3/prebuilt/lib/libmms_gyro_vstab_auth.so:system/lib/libmms_gyro_vstab_auth.so \
     device/oneplus/oneplus3/prebuilt/lib/libmms_gyro_vstab.so:system/lib/libmms_gyro_vstab.so \
